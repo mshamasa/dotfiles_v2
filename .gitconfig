@@ -1,2 +1,4 @@
 [user]
 	email = mshamasa@gmail.com
+[pager]
+	branch = false
