@@ -2,7 +2,8 @@
 
 require('lualine').setup {
   options = {
-    theme = 'catppuccin-frappe',
+    -- theme = 'catppuccin-frappe',
+    theme = 'tokyonight-night',
   }
 }
 

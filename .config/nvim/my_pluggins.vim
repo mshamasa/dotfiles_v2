@@ -13,6 +13,7 @@ Plug 'stevearc/conform.nvim'
 
 " Themes
 Plug 'sainnhe/gruvbox-material'
+Plug 'folke/tokyonight.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 " telescope

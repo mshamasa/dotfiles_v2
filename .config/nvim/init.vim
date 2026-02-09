@@ -20,5 +20,6 @@ let g:ack_use_cword_for_empty_search = 1
 
 " Load the colorscheme
 " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-colorscheme catppuccin-frappe
+" colorscheme catppuccin-frappe
+colorscheme tokyonight-storm
 
