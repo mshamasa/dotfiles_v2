@@ -8,25 +8,27 @@
 xcode-select --install
 ```
 
-## Installation
-- clone repo
-- copy content
+- Homebrew
 ```sh
-cp -rf dotfiles/ .
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-- install brew, oh-my-zsh, antigen
+- Antigen
 ```sh
-bash ./dotfiles/.config/main.sh
+curl -L git.io/antigen > antigen.zsh
 ```
 
-4. install via brew
+- Stuff
 ```sh
-brew install --file dotfiles/.config/brew/.Brewfile
+brew install neovim
+brew install yadm
 ```
 
-5. install nvim plugins
-```
+## Finally
+- clone repo via yadm
+
+- install nvim plugins
+```sh
 cd .config/nvim
 nvim
 :PlugInstall
