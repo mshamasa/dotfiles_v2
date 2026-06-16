@@ -57,9 +57,29 @@ vim.lsp.config('ts_ls', {
 vim.lsp.enable('ts_ls');
 
 vim.lsp.config('rust_analyzer', {
+  capabilities = capabilities,
   on_attach = function(client, bufnr)
-    vim.lsp.inlay_hint.enable(true, { bufnr =  bufnr })
-  end
+    on_attach(client, bufnr)
+    vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
+  end,
+  settings = {
+    ["rust-analyzer"] = {
+      imports = {
+        granularity = {
+          group = "module",
+        },
+        prefix = "self",
+      },
+      cargo = {
+        buildScripts = {
+          enable = true,
+        },
+      },
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
 })
 vim.lsp.enable('rust_analyzer');
 
@@ -68,25 +88,25 @@ vim.lsp.config('biome', {
 })
 vim.lsp.enable('biome');
 
-vim.lsp.config('pylsp', {
-  cmd = { 'pylsp' }, -- pipx installs this globally on PATH
-  capabilities = capabilities,
-  on_attach = on_attach,
-  root_dir = util.root_pattern('.git', 'pyproject.toml', 'setup.py', 'setup.cfg', 'requirements.txt'),
-  settings = {
-    pylsp = {
-      plugins = {
-        pycodestyle = { enabled = false },
-        pylint = { enabled = false },
-        flake8 = { enabled = false },
-        mccabe = { enabled = false },
-        yapf = { enabled = false },
-        autopep8 = { enabled = false },
-        black = { enabled = true },
-        isort = { enabled = true },
-      },
-    },
-  },
-})
+-- vim.lsp.config('pylsp', {
+--   cmd = { 'pylsp' }, -- pipx installs this globally on PATH
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   root_dir = util.root_pattern('.git', 'pyproject.toml', 'setup.py', 'setup.cfg', 'requirements.txt'),
+--   settings = {
+--     pylsp = {
+--       plugins = {
+--         pycodestyle = { enabled = false },
+--         pylint = { enabled = false },
+--         flake8 = { enabled = false },
+--         mccabe = { enabled = false },
+--         yapf = { enabled = false },
+--         autopep8 = { enabled = false },
+--         black = { enabled = true },
+--         isort = { enabled = true },
+--       },
+--     },
+--   },
+-- })
 
-vim.lsp.enable('pylsp')
+-- vim.lsp.enable('pylsp')

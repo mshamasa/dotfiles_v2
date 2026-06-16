@@ -3,9 +3,8 @@
 require('lualine').setup {
   options = {
     -- theme = 'catppuccin-frappe',
-    theme = 'tokyonight-night',
+    theme = 'tokyonight',
   }
 }
 
 require('trouble').setup {}
-

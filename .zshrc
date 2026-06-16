@@ -6,6 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source $HOME/.zshrc.local
+#source "$HOME/.cargo/env.fish"  # For fish
+
 # ------------------------------
 # 🧬 Antigen Plugin Manager
 # ------------------------------
@@ -62,3 +65,7 @@ unset __mamba_setup
 # ------------------------------
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# rust
+. "$HOME/.cargo/env"
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"

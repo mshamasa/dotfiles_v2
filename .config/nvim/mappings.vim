@@ -14,8 +14,8 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap L >gv
 vnoremap H <gv
 " copy/paste
-vnoremap <leader>cp "*y
-vnoremap <leader>pt "*p
+vnoremap <leader>cp "+y
+vnoremap <leader>pt "+p
 
 " Open in new tab
 noremap <silent>gf <C-W>gf

@@ -23,5 +23,6 @@ require("conform").setup({
     typescript = { "biome", "prettier", stop_after_first = true },
     typescriptreact = { "biome", "prettier", stop_after_first = true },
     python = { "isort", "black" },
+    zig = { "zigfmt" },
   },
 })

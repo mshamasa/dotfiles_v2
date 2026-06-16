@@ -1,5 +1,5 @@
 source $HOME/.config/nvim/defaults.vim
-source $HOME/.config/nvim/my_pluggins.vim
+source $HOME/.config/nvim/my_plugins.vim
 source $HOME/.config/nvim/mappings.vim
 
 " lualine and trouble setup
