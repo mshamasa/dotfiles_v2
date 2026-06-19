@@ -1,10 +1,10 @@
 -- setup lua plugin setups
 
-require('lualine').setup {
-  options = {
-    -- theme = 'catppuccin-frappe',
-    theme = 'tokyonight',
-  }
-}
+require("lualine").setup({
+	options = {
+		-- theme = 'catppuccin-frappe',
+		theme = "tokyonight",
+	},
+})
 
-require('trouble').setup {}
+require("trouble").setup({})
