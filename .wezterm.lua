@@ -20,12 +20,12 @@ config.keys = {
 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 	{
-		key = "k",
+		key = "l",
 		mods = "CMD",
 		action = wezterm.action.ActivatePaneDirection("Next"),
 	},
 	{
-		key = "j",
+		key = "h",
 		mods = "CMD",
 		action = wezterm.action.ActivatePaneDirection("Prev"),
 	},

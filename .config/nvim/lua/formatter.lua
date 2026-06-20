@@ -25,5 +25,6 @@ require("conform").setup({
 		yaml = { "prettier", stop_after_first = true },
 		python = { "isort", "black" },
 		zig = { "zigfmt" },
+		lua = { "stylua" },
 	},
 })
